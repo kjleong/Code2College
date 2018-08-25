@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comments Example1</title>
+    </head>
+    <body>
+	    
+	    <p>This is a button in html with some javascipt code</p>
+
+	    <p>Click the Button</p>
+
+	    <p id="example"></p>
+	    
+	    <button onclick="buttonClickMessage('example')">Click me!</button>
+	    
+	    <p>The button has functionality</p>
+	        
+	    <script>
+	    //Write a single line comment below this comment to 
+
+	    //Write another comment using the /* */ code block method
+	    function buttonClickMessage(elementID) {
+	    	//Add Semicolons
+	  		var colorArray = []
+	  		colorArray.push('Red')
+	  		colorArray.push('Green')
+	  		colorArray.push('Blue')
+
+	  		document.getElementById(elementID).innerHTML = colorArray
+
+	    }
+	    </script>
+
+    </body>
+</html>
