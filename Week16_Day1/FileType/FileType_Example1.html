@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro Example 2</title>
+    </head>
+    <body>
+	    
+	    <p>This is a button in html with some javascipt code</p>
+
+	    <p>Click the Button</p>
+
+	    <p id="example"></p>
+	    
+	    <button onclick="buttonClickMessage('example')">Click me!</button>
+	    
+	    <p>The button has functionality</p>
+	        
+	    <script>
+	    function buttonClickMessage(elementID) {
+	  		var compareMessage = "The javascript function is in the html document, click again";
+	  		var compareMessage2 = "The javascript function is in the html document, keep clicking";
+	    	var message = document.getElementById(elementID).innerHTML;
+	    	if (message == compareMessage2) {
+	    		document.getElementById(elementID).innerHTML = compareMessage;
+	    	}
+	    	else {
+	    		document.getElementById(elementID).innerHTML = compareMessage2;
+	    	}
+	    }
+	    </script>
+
+    </body>
+</html>
